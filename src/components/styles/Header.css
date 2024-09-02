@@ -1,0 +1,111 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+
+.header.scrolled {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header.scrolled .nav__logo {
+  color: hsl(190, 64%, 18%);
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  margin: 0 1rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.header.scrolled .nav__link {
+  color: hsl(190, 64%, 18%);
+}
+
+.nav__link:hover {
+  color: #007bff;
+}
+
+.nav__dark {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.change-theme-name {
+  margin-right: 0.5rem;
+}
+
+.change-theme {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.change-theme:hover {
+  color: white;
+}
+
+.nav .nav__close,
+.nav__toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav .nav__menu {
+    display: none;
+  }
+
+  .nav .nav__toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .nav .nav__close {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+}

@@ -1,0 +1,20 @@
+.sponsor.section {
+  padding: 60px 0;
+  background-color: transparent;
+  justify-items: center;
+}
+.sponsor .section .container {
+  justify-items: center;
+}
+.sponsor__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sponsor__img {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+}

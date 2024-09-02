@@ -1,0 +1,53 @@
+/* VideoSection.css */
+
+.video {
+  padding: 2rem 0;
+}
+
+.section__title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.video__description {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.video__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#video-file {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.video__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: hsl(190, 64%, 18%);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.video__button:hover {
+  background-color: hsl(190, 64%, 18%);
+}
+
+.video__button-icon {
+  font-size: 1.5rem;
+}
